@@ -15,6 +15,11 @@
 		FB7186F21CDAFBC500509E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7186F01CDAFBC500509E75 /* LaunchScreen.storyboard */; };
 		FB7186FD1CDAFBC500509E75 /* yoyoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7186FC1CDAFBC500509E75 /* yoyoTests.m */; };
 		FB7187081CDAFBC500509E75 /* yoyoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7187071CDAFBC500509E75 /* yoyoUITests.m */; };
+		FB751ABD1CDC7CD500E8651D /* MultiselectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB751ABC1CDC7CD500E8651D /* MultiselectViewController.m */; };
+		FB751AC31CE2E00B00E8651D /* CheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB751AC21CE2E00B00E8651D /* CheckViewController.m */; };
+		FB751AC61CE310B900E8651D /* ProvinceChooseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB751AC51CE310B900E8651D /* ProvinceChooseTableViewController.m */; };
+		FB751AC81CE3110000E8651D /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB751AC71CE3110000E8651D /* city.plist */; };
+		FB751ACB1CE3134400E8651D /* AreaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB751ACA1CE3134400E8651D /* AreaTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		FB7187031CDAFBC500509E75 /* yoyoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yoyoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7187071CDAFBC500509E75 /* yoyoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yoyoUITests.m; sourceTree = "<group>"; };
 		FB7187091CDAFBC500509E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB751ABB1CDC7CD500E8651D /* MultiselectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiselectViewController.h; sourceTree = "<group>"; };
+		FB751ABC1CDC7CD500E8651D /* MultiselectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiselectViewController.m; sourceTree = "<group>"; };
+		FB751AC11CE2E00B00E8651D /* CheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
+		FB751AC21CE2E00B00E8651D /* CheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
+		FB751AC41CE310B900E8651D /* ProvinceChooseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceChooseTableViewController.h; sourceTree = "<group>"; };
+		FB751AC51CE310B900E8651D /* ProvinceChooseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceChooseTableViewController.m; sourceTree = "<group>"; };
+		FB751AC71CE3110000E8651D /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		FB751AC91CE3134400E8651D /* AreaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaTableViewController.h; sourceTree = "<group>"; };
+		FB751ACA1CE3134400E8651D /* AreaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +119,19 @@
 				FB7186E61CDAFBC500509E75 /* AppDelegate.m */,
 				FB7186E81CDAFBC500509E75 /* ViewController.h */,
 				FB7186E91CDAFBC500509E75 /* ViewController.m */,
+				FB751ABB1CDC7CD500E8651D /* MultiselectViewController.h */,
+				FB751ABC1CDC7CD500E8651D /* MultiselectViewController.m */,
+				FB751AC11CE2E00B00E8651D /* CheckViewController.h */,
+				FB751AC21CE2E00B00E8651D /* CheckViewController.m */,
+				FB751AC41CE310B900E8651D /* ProvinceChooseTableViewController.h */,
+				FB751AC51CE310B900E8651D /* ProvinceChooseTableViewController.m */,
+				FB751AC91CE3134400E8651D /* AreaTableViewController.h */,
+				FB751ACA1CE3134400E8651D /* AreaTableViewController.m */,
 				FB7186EB1CDAFBC500509E75 /* Main.storyboard */,
 				FB7186EE1CDAFBC500509E75 /* Assets.xcassets */,
 				FB7186F01CDAFBC500509E75 /* LaunchScreen.storyboard */,
 				FB7186F31CDAFBC500509E75 /* Info.plist */,
+				FB751AC71CE3110000E8651D /* city.plist */,
 				FB7186E21CDAFBC500509E75 /* Supporting Files */,
 			);
 			path = yoyo;
@@ -244,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7186F21CDAFBC500509E75 /* LaunchScreen.storyboard in Resources */,
+				FB751AC81CE3110000E8651D /* city.plist in Resources */,
 				FB7186EF1CDAFBC500509E75 /* Assets.xcassets in Resources */,
 				FB7186ED1CDAFBC500509E75 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +296,10 @@
 			files = (
 				FB7186EA1CDAFBC500509E75 /* ViewController.m in Sources */,
 				FB7186E71CDAFBC500509E75 /* AppDelegate.m in Sources */,
+				FB751AC61CE310B900E8651D /* ProvinceChooseTableViewController.m in Sources */,
+				FB751AC31CE2E00B00E8651D /* CheckViewController.m in Sources */,
+				FB751ABD1CDC7CD500E8651D /* MultiselectViewController.m in Sources */,
+				FB751ACB1CE3134400E8651D /* AreaTableViewController.m in Sources */,
 				FB7186E41CDAFBC500509E75 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +524,7 @@
 				FB71870E1CDAFBC500509E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB71870F1CDAFBC500509E75 /* Build configuration list for PBXNativeTarget "yoyoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +533,7 @@
 				FB7187111CDAFBC500509E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB7187121CDAFBC500509E75 /* Build configuration list for PBXNativeTarget "yoyoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +542,7 @@
 				FB7187141CDAFBC500509E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
