@@ -78,28 +78,24 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
+    cell.textLabel.text = [NSString stringWithFormat:@"第%zi列,第%zi行",indexPath.section, indexPath.row];
+    
+    //当上下拉动的时候，因为cell的复用性，我们需要重新判断一下哪一行是打勾的
     if (_selIndex == indexPath) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }else {
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
-    //需要赋值的时候，可以分开判断
-    if (indexPath.section == 0) {
-        
-    }else if (indexPath.section == 1) {
-        
-    }else {
-        
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%zi列,第%zi行",indexPath.section, indexPath.row];
+    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //之前选中的
+    //之前选中的，取消选择
     UITableViewCell *celled = [tableView cellForRowAtIndexPath:_selIndex];
     celled.accessoryType = UITableViewCellAccessoryNone;
-    //现在选中的
+    //记录当前选中的位置索引
     _selIndex = indexPath;
+    //当前选择的打勾
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
 }

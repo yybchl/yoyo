@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) UITableView *tableView;
 
-@property (strong, nonatomic) NSMutableArray *selectIndexs;//选中的行
+@property (strong, nonatomic) NSMutableArray *selectIndexs;//多选选中的行
 
 @end
 
@@ -79,34 +79,28 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
+    cell.textLabel.text = [NSString stringWithFormat:@"第%zi列,第%zi行",indexPath.section, indexPath.row];
+    
     //设置勾
     cell.accessoryType = UITableViewCellAccessoryNone;
     for (NSIndexPath *index in _selectIndexs) {
-        if (index == indexPath) {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        if (index == indexPath) { //改行在选择的数组里面有记录
+            cell.accessoryType = UITableViewCellAccessoryCheckmark; //打勾
             break;
         }
     }
-    //需要赋值的时候，可以分开判断
-    if (indexPath.section == 0) {
-        
-    }else if (indexPath.section == 1) {
     
-    }else {
-        
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%zi列,第%zi行",indexPath.section, indexPath.row];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //现在选中的
+    //获取到点击的cell
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        [_selectIndexs removeObject:indexPath];
-    }else {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        [_selectIndexs addObject:indexPath];
+    if (cell.accessoryType == UITableViewCellAccessoryCheckmark) { //如果为选中状态
+        cell.accessoryType = UITableViewCellAccessoryNone; //切换为未选中
+        [_selectIndexs removeObject:indexPath]; //数据移除
+    }else { //未选中
+        cell.accessoryType = UITableViewCellAccessoryCheckmark; //切换为选中
+        [_selectIndexs addObject:indexPath]; //添加索引数据到数组
     }
 }
 - (void)didReceiveMemoryWarning {
