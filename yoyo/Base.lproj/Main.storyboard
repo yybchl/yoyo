@@ -40,6 +40,13 @@
                                     <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7MK-Lt-CT6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-dK-ua4">
+                                <rect key="frame" x="70" y="157" width="121" height="37"/>
+                                <state key="normal" title="单页城市选择"/>
+                                <connections>
+                                    <action selector="selectCity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxr-QZ-4JD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

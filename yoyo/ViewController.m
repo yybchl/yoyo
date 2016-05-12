@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MultiselectViewController.h"
+#import "CityChooseViewController.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,10 @@
 }
 - (IBAction)nextAction:(id)sender {
     MultiselectViewController *vc = [MultiselectViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)selectCity:(id)sender {
+    CityChooseViewController *vc = [CityChooseViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
