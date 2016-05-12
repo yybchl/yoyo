@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MultiselectViewController.h"
 #import "CityChooseViewController.h"
+#import "TextUpViewController.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,10 @@
 }
 - (IBAction)selectCity:(id)sender {
     CityChooseViewController *vc = [CityChooseViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)textFieldUp:(id)sender {
+    TextUpViewController *vc = [TextUpViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

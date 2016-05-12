@@ -34,8 +34,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-AB-7nE">
-                                <rect key="frame" x="101" y="101" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="85" y="101" width="92" height="30"/>
+                                <state key="normal" title="单选/复选"/>
                                 <connections>
                                     <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7MK-Lt-CT6"/>
                                 </connections>
@@ -45,6 +45,13 @@
                                 <state key="normal" title="单页城市选择"/>
                                 <connections>
                                     <action selector="selectCity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxr-QZ-4JD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNG-uF-Ij4">
+                                <rect key="frame" x="85" y="215" width="106" height="30"/>
+                                <state key="normal" title="输入框自动上弹"/>
+                                <connections>
+                                    <action selector="textFieldUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaA-iR-pTr"/>
                                 </connections>
                             </button>
                         </subviews>

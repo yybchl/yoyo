@@ -21,6 +21,7 @@
 		FB751AC81CE3110000E8651D /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB751AC71CE3110000E8651D /* city.plist */; };
 		FB751ACB1CE3134400E8651D /* AreaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB751ACA1CE3134400E8651D /* AreaTableViewController.m */; };
 		FBCE6B5D1CE4151C00FA5006 /* CityChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE6B5C1CE4151C00FA5006 /* CityChooseViewController.m */; };
+		FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE6B5F1CE4216600FA5006 /* TextUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		FB751ACA1CE3134400E8651D /* AreaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaTableViewController.m; sourceTree = "<group>"; };
 		FBCE6B5B1CE4151C00FA5006 /* CityChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityChooseViewController.h; sourceTree = "<group>"; };
 		FBCE6B5C1CE4151C00FA5006 /* CityChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityChooseViewController.m; sourceTree = "<group>"; };
+		FBCE6B5E1CE4216600FA5006 /* TextUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextUpViewController.h; sourceTree = "<group>"; };
+		FBCE6B5F1CE4216600FA5006 /* TextUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				FB751ACA1CE3134400E8651D /* AreaTableViewController.m */,
 				FBCE6B5B1CE4151C00FA5006 /* CityChooseViewController.h */,
 				FBCE6B5C1CE4151C00FA5006 /* CityChooseViewController.m */,
+				FBCE6B5E1CE4216600FA5006 /* TextUpViewController.h */,
+				FBCE6B5F1CE4216600FA5006 /* TextUpViewController.m */,
 				FB7186EB1CDAFBC500509E75 /* Main.storyboard */,
 				FB7186EE1CDAFBC500509E75 /* Assets.xcassets */,
 				FB7186F01CDAFBC500509E75 /* LaunchScreen.storyboard */,
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7186EA1CDAFBC500509E75 /* ViewController.m in Sources */,
+				FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */,
 				FB7186E71CDAFBC500509E75 /* AppDelegate.m in Sources */,
 				FB751AC61CE310B900E8651D /* ProvinceChooseTableViewController.m in Sources */,
 				FB751AC31CE2E00B00E8651D /* CheckViewController.m in Sources */,
