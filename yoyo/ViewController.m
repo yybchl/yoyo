@@ -11,7 +11,7 @@
 #import "CityChooseViewController.h"
 #import "TextUpViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UISearchBarDelegate>
 
 @end
 
@@ -19,7 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 260, self.view.frame.size.width - 16, 35)];
+    searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    searchBar.placeholder = @"请输入关键字";
+    [searchBar setImage:[UIImage imageNamed:@"test_sousuo"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal]; //替换收缩放大镜
+    [searchBar setImage:[UIImage imageNamed:@"test_quxiao"] forSearchBarIcon:UISearchBarIconClear state:UIControlStateNormal]; //输入的时候，右侧的清除按钮
+    [searchBar setSearchFieldBackgroundImage:[UIImage imageNamed:@"sousuokuang"] forState:UIControlStateNormal]; //输入背景框
+    //改变提示文字颜色
+    UITextField *sbTextField = [searchBar valueForKey:@"searchField"]; //首先取出textfield
+    sbTextField.textColor = [UIColor blueColor]; //输入的颜色
+    UILabel *sbPlaceholderLabel = [sbTextField valueForKey:@"placeholderLabel"]; //然后取出textField的placeHolder
+    sbPlaceholderLabel.textColor = [UIColor redColor]; //改变颜色
+    searchBar.delegate = self;
+    //取消按钮有显示的时候
+    searchBar.showsCancelButton = YES;
+    UIButton *cancelBtn = [searchBar valueForKey:@"cancelButton"]; //首先取出cancelBtn
+    cancelBtn.enabled = YES;
+    //这样就可以随便设置这个按钮了
+    [cancelBtn setTitle:@"搜索" forState:UIControlStateNormal];
+    [self.view addSubview:searchBar];
+}
+-(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    
+}
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder]; //searchBar失去焦点
+    UIButton *cancelBtn = [searchBar valueForKey:@"cancelButton"]; //首先取出cancelBtn
+    cancelBtn.enabled = YES; //把enabled设置为yes
 }
 - (IBAction)nextAction:(id)sender {
     MultiselectViewController *vc = [MultiselectViewController new];
