@@ -54,6 +54,13 @@
                                     <action selector="textFieldUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaA-iR-pTr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv2-1y-apC">
+                                <rect key="frame" x="85" y="336" width="106" height="30"/>
+                                <state key="normal" title="cell高度适应"/>
+                                <connections>
+                                    <action selector="cellHeightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="004-YG-isw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

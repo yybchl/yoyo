@@ -10,6 +10,7 @@
 #import "MultiselectViewController.h"
 #import "CityChooseViewController.h"
 #import "TextUpViewController.h"
+#import "CellHeightTableViewController.h"
 
 @interface ViewController ()<UISearchBarDelegate>
 
@@ -60,6 +61,10 @@
 }
 - (IBAction)textFieldUp:(id)sender {
     TextUpViewController *vc = [TextUpViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)cellHeightAction:(id)sender {
+    CellHeightTableViewController *vc = [CellHeightTableViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

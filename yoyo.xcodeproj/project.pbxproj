@@ -22,6 +22,9 @@
 		FB751ACB1CE3134400E8651D /* AreaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB751ACA1CE3134400E8651D /* AreaTableViewController.m */; };
 		FBCE6B5D1CE4151C00FA5006 /* CityChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE6B5C1CE4151C00FA5006 /* CityChooseViewController.m */; };
 		FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE6B5F1CE4216600FA5006 /* TextUpViewController.m */; };
+		FBF616641CEEEA6F00279BDE /* CellHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616631CEEEA6F00279BDE /* CellHeightTableViewController.m */; };
+		FBF616681CEEEAC400279BDE /* CellHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616661CEEEAC400279BDE /* CellHeightCell.m */; };
+		FBF616691CEEEAC400279BDE /* CellHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF616671CEEEAC400279BDE /* CellHeightCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,11 @@
 		FBCE6B5C1CE4151C00FA5006 /* CityChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityChooseViewController.m; sourceTree = "<group>"; };
 		FBCE6B5E1CE4216600FA5006 /* TextUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextUpViewController.h; sourceTree = "<group>"; };
 		FBCE6B5F1CE4216600FA5006 /* TextUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextUpViewController.m; sourceTree = "<group>"; };
+		FBF616621CEEEA6F00279BDE /* CellHeightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightTableViewController.h; sourceTree = "<group>"; };
+		FBF616631CEEEA6F00279BDE /* CellHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHeightTableViewController.m; sourceTree = "<group>"; };
+		FBF616651CEEEAC400279BDE /* CellHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightCell.h; sourceTree = "<group>"; };
+		FBF616661CEEEAC400279BDE /* CellHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHeightCell.m; sourceTree = "<group>"; };
+		FBF616671CEEEAC400279BDE /* CellHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellHeightCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,11 @@
 				FBCE6B5C1CE4151C00FA5006 /* CityChooseViewController.m */,
 				FBCE6B5E1CE4216600FA5006 /* TextUpViewController.h */,
 				FBCE6B5F1CE4216600FA5006 /* TextUpViewController.m */,
+				FBF616621CEEEA6F00279BDE /* CellHeightTableViewController.h */,
+				FBF616631CEEEA6F00279BDE /* CellHeightTableViewController.m */,
+				FBF616651CEEEAC400279BDE /* CellHeightCell.h */,
+				FBF616661CEEEAC400279BDE /* CellHeightCell.m */,
+				FBF616671CEEEAC400279BDE /* CellHeightCell.xib */,
 				FB7186EB1CDAFBC500509E75 /* Main.storyboard */,
 				FB7186EE1CDAFBC500509E75 /* Assets.xcassets */,
 				FB7186F01CDAFBC500509E75 /* LaunchScreen.storyboard */,
@@ -279,6 +292,7 @@
 				FB7186F21CDAFBC500509E75 /* LaunchScreen.storyboard in Resources */,
 				FB751AC81CE3110000E8651D /* city.plist in Resources */,
 				FB7186EF1CDAFBC500509E75 /* Assets.xcassets in Resources */,
+				FBF616691CEEEAC400279BDE /* CellHeightCell.xib in Resources */,
 				FB7186ED1CDAFBC500509E75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,11 +322,13 @@
 				FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */,
 				FB7186E71CDAFBC500509E75 /* AppDelegate.m in Sources */,
 				FB751AC61CE310B900E8651D /* ProvinceChooseTableViewController.m in Sources */,
+				FBF616641CEEEA6F00279BDE /* CellHeightTableViewController.m in Sources */,
 				FB751AC31CE2E00B00E8651D /* CheckViewController.m in Sources */,
 				FB751ABD1CDC7CD500E8651D /* MultiselectViewController.m in Sources */,
 				FB751ACB1CE3134400E8651D /* AreaTableViewController.m in Sources */,
 				FBCE6B5D1CE4151C00FA5006 /* CityChooseViewController.m in Sources */,
 				FB7186E41CDAFBC500509E75 /* main.m in Sources */,
+				FBF616681CEEEAC400279BDE /* CellHeightCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
