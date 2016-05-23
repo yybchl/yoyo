@@ -25,6 +25,8 @@
 		FBF616641CEEEA6F00279BDE /* CellHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616631CEEEA6F00279BDE /* CellHeightTableViewController.m */; };
 		FBF616681CEEEAC400279BDE /* CellHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616661CEEEAC400279BDE /* CellHeightCell.m */; };
 		FBF616691CEEEAC400279BDE /* CellHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF616671CEEEAC400279BDE /* CellHeightCell.xib */; };
+		FBF6166C1CF2A59100279BDE /* MyAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF6166B1CF2A59100279BDE /* MyAnimalViewController.m */; };
+		FBF6166F1CF2A99E00279BDE /* MyCurveAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF6166E1CF2A99E00279BDE /* MyCurveAnimalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		FBF616651CEEEAC400279BDE /* CellHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightCell.h; sourceTree = "<group>"; };
 		FBF616661CEEEAC400279BDE /* CellHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHeightCell.m; sourceTree = "<group>"; };
 		FBF616671CEEEAC400279BDE /* CellHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellHeightCell.xib; sourceTree = "<group>"; };
+		FBF6166A1CF2A59100279BDE /* MyAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimalViewController.h; sourceTree = "<group>"; };
+		FBF6166B1CF2A59100279BDE /* MyAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimalViewController.m; sourceTree = "<group>"; };
+		FBF6166D1CF2A99E00279BDE /* MyCurveAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCurveAnimalViewController.h; sourceTree = "<group>"; };
+		FBF6166E1CF2A99E00279BDE /* MyCurveAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCurveAnimalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,10 @@
 				FBF616651CEEEAC400279BDE /* CellHeightCell.h */,
 				FBF616661CEEEAC400279BDE /* CellHeightCell.m */,
 				FBF616671CEEEAC400279BDE /* CellHeightCell.xib */,
+				FBF6166A1CF2A59100279BDE /* MyAnimalViewController.h */,
+				FBF6166B1CF2A59100279BDE /* MyAnimalViewController.m */,
+				FBF6166D1CF2A99E00279BDE /* MyCurveAnimalViewController.h */,
+				FBF6166E1CF2A99E00279BDE /* MyCurveAnimalViewController.m */,
 				FB7186EB1CDAFBC500509E75 /* Main.storyboard */,
 				FB7186EE1CDAFBC500509E75 /* Assets.xcassets */,
 				FB7186F01CDAFBC500509E75 /* LaunchScreen.storyboard */,
@@ -320,8 +330,10 @@
 			files = (
 				FB7186EA1CDAFBC500509E75 /* ViewController.m in Sources */,
 				FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */,
+				FBF6166C1CF2A59100279BDE /* MyAnimalViewController.m in Sources */,
 				FB7186E71CDAFBC500509E75 /* AppDelegate.m in Sources */,
 				FB751AC61CE310B900E8651D /* ProvinceChooseTableViewController.m in Sources */,
+				FBF6166F1CF2A99E00279BDE /* MyCurveAnimalViewController.m in Sources */,
 				FBF616641CEEEA6F00279BDE /* CellHeightTableViewController.m in Sources */,
 				FB751AC31CE2E00B00E8651D /* CheckViewController.m in Sources */,
 				FB751ABD1CDC7CD500E8651D /* MultiselectViewController.m in Sources */,

@@ -11,6 +11,8 @@
 #import "CityChooseViewController.h"
 #import "TextUpViewController.h"
 #import "CellHeightTableViewController.h"
+#import "MyAnimalViewController.h"
+#import "MyCurveAnimalViewController.h"
 
 @interface ViewController ()<UISearchBarDelegate>
 
@@ -65,6 +67,14 @@
 }
 - (IBAction)cellHeightAction:(id)sender {
     CellHeightTableViewController *vc = [CellHeightTableViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)animalAction:(id)sender {
+    MyAnimalViewController *vc = [MyAnimalViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)curveAnimalAction:(id)sender {
+    MyCurveAnimalViewController *vc = [MyCurveAnimalViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

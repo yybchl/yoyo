@@ -55,10 +55,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv2-1y-apC">
-                                <rect key="frame" x="85" y="336" width="106" height="30"/>
+                                <rect key="frame" x="85" y="285" width="106" height="30"/>
                                 <state key="normal" title="cell高度适应"/>
                                 <connections>
                                     <action selector="cellHeightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="004-YG-isw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxd-MN-OMg">
+                                <rect key="frame" x="85" y="340" width="106" height="30"/>
+                                <state key="normal" title="关键帧动画"/>
+                                <connections>
+                                    <action selector="animalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOd-oH-usk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-u2-gqM">
+                                <rect key="frame" x="85" y="378" width="106" height="45"/>
+                                <state key="normal" title="关键帧曲线动画"/>
+                                <connections>
+                                    <action selector="curveAnimalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bt-gT-nOh"/>
                                 </connections>
                             </button>
                         </subviews>
