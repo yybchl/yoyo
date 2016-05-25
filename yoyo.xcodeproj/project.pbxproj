@@ -27,6 +27,9 @@
 		FBF616691CEEEAC400279BDE /* CellHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF616671CEEEAC400279BDE /* CellHeightCell.xib */; };
 		FBF6166C1CF2A59100279BDE /* MyAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF6166B1CF2A59100279BDE /* MyAnimalViewController.m */; };
 		FBF6166F1CF2A99E00279BDE /* MyCurveAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF6166E1CF2A99E00279BDE /* MyCurveAnimalViewController.m */; };
+		FBF616721CF54BE500279BDE /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616711CF54BE500279BDE /* CircleView.m */; };
+		FBF616751CF54CB100279BDE /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616741CF54CB100279BDE /* CircleViewController.m */; };
+		FBF616781CF5A77E00279BDE /* PieItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616771CF5A77E00279BDE /* PieItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,12 @@
 		FBF6166B1CF2A59100279BDE /* MyAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimalViewController.m; sourceTree = "<group>"; };
 		FBF6166D1CF2A99E00279BDE /* MyCurveAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCurveAnimalViewController.h; sourceTree = "<group>"; };
 		FBF6166E1CF2A99E00279BDE /* MyCurveAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCurveAnimalViewController.m; sourceTree = "<group>"; };
+		FBF616701CF54BE500279BDE /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		FBF616711CF54BE500279BDE /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		FBF616731CF54CB100279BDE /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		FBF616741CF54CB100279BDE /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		FBF616761CF5A77E00279BDE /* PieItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieItem.h; sourceTree = "<group>"; };
+		FBF616771CF5A77E00279BDE /* PieItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +169,12 @@
 				FBF6166B1CF2A59100279BDE /* MyAnimalViewController.m */,
 				FBF6166D1CF2A99E00279BDE /* MyCurveAnimalViewController.h */,
 				FBF6166E1CF2A99E00279BDE /* MyCurveAnimalViewController.m */,
+				FBF616731CF54CB100279BDE /* CircleViewController.h */,
+				FBF616741CF54CB100279BDE /* CircleViewController.m */,
+				FBF616701CF54BE500279BDE /* CircleView.h */,
+				FBF616711CF54BE500279BDE /* CircleView.m */,
+				FBF616761CF5A77E00279BDE /* PieItem.h */,
+				FBF616771CF5A77E00279BDE /* PieItem.m */,
 				FB7186EB1CDAFBC500509E75 /* Main.storyboard */,
 				FB7186EE1CDAFBC500509E75 /* Assets.xcassets */,
 				FB7186F01CDAFBC500509E75 /* LaunchScreen.storyboard */,
@@ -329,9 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7186EA1CDAFBC500509E75 /* ViewController.m in Sources */,
+				FBF616781CF5A77E00279BDE /* PieItem.m in Sources */,
 				FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */,
 				FBF6166C1CF2A59100279BDE /* MyAnimalViewController.m in Sources */,
 				FB7186E71CDAFBC500509E75 /* AppDelegate.m in Sources */,
+				FBF616751CF54CB100279BDE /* CircleViewController.m in Sources */,
+				FBF616721CF54BE500279BDE /* CircleView.m in Sources */,
 				FB751AC61CE310B900E8651D /* ProvinceChooseTableViewController.m in Sources */,
 				FBF6166F1CF2A99E00279BDE /* MyCurveAnimalViewController.m in Sources */,
 				FBF616641CEEEA6F00279BDE /* CellHeightTableViewController.m in Sources */,

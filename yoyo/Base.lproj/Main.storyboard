@@ -75,6 +75,13 @@
                                     <action selector="curveAnimalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bt-gT-nOh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uT-cc-kRd">
+                                <rect key="frame" x="85" y="431" width="106" height="30"/>
+                                <state key="normal" title="环形图"/>
+                                <connections>
+                                    <action selector="circleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tax-3Y-BN4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

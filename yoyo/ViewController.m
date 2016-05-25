@@ -13,6 +13,7 @@
 #import "CellHeightTableViewController.h"
 #import "MyAnimalViewController.h"
 #import "MyCurveAnimalViewController.h"
+#import "CircleViewController.h"
 
 @interface ViewController ()<UISearchBarDelegate>
 
@@ -75,6 +76,10 @@
 }
 - (IBAction)curveAnimalAction:(id)sender {
     MyCurveAnimalViewController *vc = [MyCurveAnimalViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)circleAction:(id)sender {
+    CircleViewController *vc = [CircleViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
