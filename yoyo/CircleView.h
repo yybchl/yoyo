@@ -10,4 +10,6 @@
 
 @interface CircleView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame Items:(NSArray *)items;
+
 @end

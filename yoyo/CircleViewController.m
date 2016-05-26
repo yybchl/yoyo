@@ -8,6 +8,7 @@
 
 #import "CircleViewController.h"
 #import "CircleView.h"
+#import "PieItem.h"
 
 @interface CircleViewController ()
 
@@ -18,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    CircleView *circleView = [[CircleView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 300)];
+    NSArray *items = @[[PieItem pieItemWith:[UIColor redColor] ratio:0.45], [PieItem pieItemWith:[UIColor blueColor] ratio:0.25], [PieItem pieItemWith:[UIColor greenColor] ratio:0.15], [PieItem pieItemWith:[UIColor purpleColor] ratio:0.15]];
+    CircleView *circleView = [[CircleView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 300) Items:items];
     [self.view addSubview:circleView];
 }
 

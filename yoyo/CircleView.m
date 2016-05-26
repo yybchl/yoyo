@@ -7,6 +7,7 @@
 //
 
 #import "CircleView.h"
+#import "PieItem.h"
 
 @implementation CircleView {
 }
@@ -27,29 +28,36 @@
 //    [circlePath stroke];
 //    [circlePath fill];
 }
--(instancetype)initWithFrame:(CGRect)frame {
+-(instancetype)initWithFrame:(CGRect)frame Items:(NSArray *)items{
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        CAShapeLayer *_spLayer = [CAShapeLayer layer];
-        _spLayer.lineCap = kCALineCapButt;//设置线条起点和终点的样式
-        _spLayer.lineJoin = kCALineJoinBevel;//设置线条的转角的样式
-        _spLayer.fillColor   = [[UIColor clearColor] CGColor];
-        _spLayer.strokeColor   = [[UIColor greenColor] CGColor];
-        _spLayer.lineWidth   = 60.0;
-        [self.layer addSublayer:_spLayer];
-        //创建path
-        UIBezierPath *circlePath = [UIBezierPath bezierPath];
-        // 添加圆到path
-        [circlePath addArcWithCenter:CGPointMake(frame.size.width/2, frame.size.height/2) radius:frame.size.height / 2 - 50 startAngle:-M_PI endAngle:M_PI clockwise:YES];
-        _spLayer.path = circlePath.CGPath;
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-        animation.fromValue = @(0.0);
-        animation.toValue = @(1.0);
-        animation.duration = 1.0;
-        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        animation.autoreverses = NO;
-        [_spLayer addAnimation:animation forKey:@"strokeEnd"];
+        CGFloat startAngle = M_PI * 0.25; //开始的角度
+        CGFloat endAngle = 0;//结束的位置
+        for (int i = 0; i < items.count; i++) {
+            PieItem *item  = items[i];
+            CAShapeLayer *_spLayer = [CAShapeLayer layer];
+            _spLayer.lineCap = kCALineCapButt;//设置线条起点和终点的样式
+            _spLayer.lineJoin = kCALineJoinBevel;//设置线条的转角的样式
+            _spLayer.fillColor   = [[UIColor clearColor] CGColor];
+            _spLayer.strokeColor   = [item.pieColor CGColor];
+            _spLayer.lineWidth   = 60.0;
+            [self.layer addSublayer:_spLayer];
+            endAngle = startAngle + M_PI * 2.0 * item.ratio;
+            //创建path
+            UIBezierPath *circlePath = [UIBezierPath bezierPath];
+            // 添加圆到path
+            [circlePath addArcWithCenter:CGPointMake(frame.size.width/2, frame.size.height/2) radius:frame.size.height / 2 - 50 startAngle:startAngle endAngle:endAngle clockwise:YES];
+            _spLayer.path = circlePath.CGPath;
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+            animation.fromValue = @(0.0);
+            animation.toValue = @(1.0);
+            animation.duration = 1.0;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+            animation.autoreverses = NO;
+            [_spLayer addAnimation:animation forKey:@"strokeEnd"];
+            startAngle = startAngle + M_PI * 2.0 * item.ratio;
+        }
     }
     return self;
 }
