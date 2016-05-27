@@ -12,6 +12,8 @@
 
 @interface CircleViewController ()
 
+@property (strong, nonatomic) CircleView *circleView;
+
 @end
 
 @implementation CircleViewController
@@ -20,8 +22,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     NSArray *items = @[[PieItem pieItemWith:[UIColor redColor] ratio:0.45], [PieItem pieItemWith:[UIColor blueColor] ratio:0.25], [PieItem pieItemWith:[UIColor greenColor] ratio:0.15], [PieItem pieItemWith:[UIColor purpleColor] ratio:0.15]];
-    CircleView *circleView = [[CircleView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 300) Items:items];
-    [self.view addSubview:circleView];
+    _circleView = [[CircleView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 300) Items:items];
+    [self.view addSubview:_circleView];
+    //添加促发按钮
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64, 50, 35)];
+    btn.backgroundColor = [UIColor purpleColor];
+    [btn setTitle:@"绘画" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(startStroke) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+-(void)startStroke {
+    [_circleView startPieStroke];
 }
 
 - (void)didReceiveMemoryWarning {

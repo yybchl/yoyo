@@ -10,6 +10,9 @@
 
 @interface CircleView : UIView
 
--(instancetype)initWithFrame:(CGRect)frame Items:(NSArray *)items;
+-(instancetype)initWithFrame:(CGRect)frame Items:(NSArray *)items; //初始化
+
+#pragma mark 开始画图
+-(void) startPieStroke;
 
 @end
