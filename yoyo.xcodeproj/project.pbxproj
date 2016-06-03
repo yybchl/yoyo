@@ -31,6 +31,7 @@
 		FBF616751CF54CB100279BDE /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616741CF54CB100279BDE /* CircleViewController.m */; };
 		FBF616781CF5A77E00279BDE /* PieItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616771CF5A77E00279BDE /* PieItem.m */; };
 		FBF6167D1CF7EDC200279BDE /* PieStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF6167C1CF7EDC200279BDE /* PieStroke.m */; };
+		FBF616811CFBD46E00279BDE /* FileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF616801CFBD46E00279BDE /* FileHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		FBF616771CF5A77E00279BDE /* PieItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieItem.m; sourceTree = "<group>"; };
 		FBF6167B1CF7EDC200279BDE /* PieStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieStroke.h; sourceTree = "<group>"; };
 		FBF6167C1CF7EDC200279BDE /* PieStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieStroke.m; sourceTree = "<group>"; };
+		FBF6167F1CFBD46E00279BDE /* FileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandle.h; sourceTree = "<group>"; };
+		FBF616801CFBD46E00279BDE /* FileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 		FB7186D61CDAFBC500509E75 = {
 			isa = PBXGroup;
 			children = (
+				FBF6167E1CFBD46E00279BDE /* 文件本地缓存操作 */,
 				FB7186E11CDAFBC500509E75 /* yoyo */,
 				FB7186FB1CDAFBC500509E75 /* yoyoTests */,
 				FB7187061CDAFBC500509E75 /* yoyoUITests */,
@@ -214,6 +218,15 @@
 				FB7187091CDAFBC500509E75 /* Info.plist */,
 			);
 			path = yoyoUITests;
+			sourceTree = "<group>";
+		};
+		FBF6167E1CFBD46E00279BDE /* 文件本地缓存操作 */ = {
+			isa = PBXGroup;
+			children = (
+				FBF6167F1CFBD46E00279BDE /* FileHandle.h */,
+				FBF616801CFBD46E00279BDE /* FileHandle.m */,
+			);
+			path = "文件本地缓存操作";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7186EA1CDAFBC500509E75 /* ViewController.m in Sources */,
+				FBF616811CFBD46E00279BDE /* FileHandle.m in Sources */,
 				FBF616781CF5A77E00279BDE /* PieItem.m in Sources */,
 				FBCE6B601CE4216600FA5006 /* TextUpViewController.m in Sources */,
 				FBF6166C1CF2A59100279BDE /* MyAnimalViewController.m in Sources */,

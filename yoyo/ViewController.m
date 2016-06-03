@@ -14,6 +14,7 @@
 #import "MyAnimalViewController.h"
 #import "MyCurveAnimalViewController.h"
 #import "CircleViewController.h"
+#import "FileHandle.h"
 
 @interface ViewController ()<UISearchBarDelegate>
 
@@ -42,6 +43,8 @@
     //这样就可以随便设置这个按钮了
     [cancelBtn setTitle:@"搜索" forState:UIControlStateNormal];
     [self.view addSubview:searchBar];
+    NSArray *arr = @[@"hhhh",@"jjj"];
+    [FileHandle SaveArray:arr andFileName:@"testttttyoyo"];
 }
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
     
@@ -67,6 +70,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)cellHeightAction:(id)sender {
+    [FileHandle cleanCache];
     CellHeightTableViewController *vc = [CellHeightTableViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }

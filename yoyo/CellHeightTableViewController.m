@@ -50,14 +50,9 @@
 }
 //获取高度,传入文本框的宽度和字号以及内容
 -(CGFloat)getLabelHeightWithString:(NSString *)text andWidth:(CGFloat)width andFont:(UIFont *)font{
-    UITextView* textViewTemple = [[UITextView alloc]init];
-    textViewTemple.text = text;
-    //    [textViewTemple setFont:[UIFont systemFontOfSize:14]];
-    [textViewTemple setFont:font];
-    //     获取该段attributedString的属性字典
-    CGSize textSize = [textViewTemple.text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) // 用于计算文本绘制时占据的矩形块
+    CGSize textSize = [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) // 用于计算文本绘制时占据的矩形块
                                                         options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading // 文本绘制时的附加选项
-                                                     attributes:[NSDictionary dictionaryWithObjectsAndKeys:textViewTemple.font,NSFontAttributeName, nil]         // 文字的属性
+                                                     attributes:[NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil]         // 文字的属性
                                                         context:nil].size;
     return textSize.height;
 }
